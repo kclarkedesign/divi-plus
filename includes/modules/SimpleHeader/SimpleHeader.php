@@ -37,7 +37,7 @@ class DVPLS_SimpleHeader extends ET_Builder_Module {
 	public function render( $unprocessed_props, $content = null, $render_slug ) {
 		return sprintf(
 			'<h1 class="dvpls-divi-plus-heading">%1$s</h1>
-				<p>%2s</p>',
+				<div>%2s</div>',
 				esc_html( $this->props['heading'] ),
 				$this->props['content']
 		);
