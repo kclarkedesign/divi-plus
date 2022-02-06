@@ -4,8 +4,8 @@ require_once get_template_directory().'/includes/builder/module/helpers/Slider.p
 
 class DVPLS_Slider_Item extends ET_Builder_Module {
 	function init() {
-		$this->name                        = et_builder_i18n( 'DiviPlus Slide' );
-		$this->plural                      = esc_html__( 'DiviPlus Slides', 'dvpls-divi-plus' );
+		$this->name                        = et_builder_i18n( 'Ex Slide' );
+		$this->plural                      = esc_html__( 'Ex Slides', 'dvpls-divi-plus' );
 		$this->slug                        = 'dv_pls_slide';
 		$this->vb_support                  = 'on';
 		$this->type                        = 'child';

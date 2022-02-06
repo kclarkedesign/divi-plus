@@ -1,6 +1,6 @@
 import HelloWorld from "./HelloWorld/HelloWorld";
 import SimpleHeader from "./SimpleHeader/SimpleHeader";
-import Slider from "./Slider/Slider";
-import SliderItem from "./SliderItem/SliderItem";
+import SimpleSlider from "./SimpleSlider/SimpleSlider";
+import SimpleSliderItem from "./SimpleSliderItem/SimpleSliderItem";
 
-export default [HelloWorld, SimpleHeader, Slider, SliderItem];
+export default [HelloWorld, SimpleHeader, SimpleSlider, SimpleSliderItem];
