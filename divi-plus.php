@@ -37,3 +37,8 @@ function dvpls_initialize_extension() {
 }
 add_action( 'divi_extensions_init', 'dvpls_initialize_extension' );
 endif;
+
+
+// /* Display Add to cart button on archives */ 
+
+// add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 10);

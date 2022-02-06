@@ -7,8 +7,9 @@
 /coverage
 
 # production
-/scripts/bundle.min.js
-/styles/bundle.min.css
+/scripts
+/styles
+/languages
 asset-manifest.json
 *.map
 

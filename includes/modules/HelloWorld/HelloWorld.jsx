@@ -10,11 +10,10 @@ class HelloWorld extends Component {
   static slug = 'dvpls_hello_world';
 
   render() {
-    const Content = this.props.content;
-
+  
     return (
       <h1>
-        <Content/>
+        {this.props.content()}
       </h1>
     );
   }

@@ -1,3 +1,4 @@
-import HelloWorld from './HelloWorld/HelloWorld';
+import HelloWorld from "./HelloWorld/HelloWorld";
+import SimpleHeader from "./SimpleHeader/SimpleHeader";
 
-export default [HelloWorld];
+export default [HelloWorld, SimpleHeader];
