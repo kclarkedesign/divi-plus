@@ -1,24 +1,27 @@
 // External Dependencies
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 // Internal Dependencies
 import './style.css';
 
 
-class Slider extends Component {
+class SimpleSlider extends Component {
 
   static slug = 'dp_simple_slider';
 
   render() {
-
+    
     return (
-      <Fragment>
-        <div className='dvpls-slider et_pb_slider'>
-          <div className="dvpls-slides et_pb_slides">{this.props.content}</div>
+      <div className="swiper">
+        <div className="swiper-wrapper">
+          {this.props.content}
         </div>
-      </Fragment>
+        <div className="swiper-pagination"></div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
+      </div>
     );
   }
 }
 
-export default Slider;
+export default SimpleSlider;

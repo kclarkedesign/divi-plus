@@ -25,10 +25,13 @@ class DP_Module_Slider extends ET_Builder_Module {
         $content = $this->content;
 
 		return sprintf(
-            '<div class="dp_simple_slider">
-				<div class="dp_simple_slides et_pb_slides">
+            '<div class="dp_simple_slider swiper">
+				<div class="dp_simple_slider__slides swiper-wrapper">
 					%1$s
 				</div>
+				<div class="dp_simple_slider__pagination"></div>
+				<div class="dp_simple_slider__prev"></div>
+  				<div class="dp_simple_slider__next"></div>
 			</div>
 			',
 			$content

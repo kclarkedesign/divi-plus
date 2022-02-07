@@ -38,7 +38,17 @@ function dvpls_initialize_extension() {
 add_action( 'divi_extensions_init', 'dvpls_initialize_extension' );
 endif;
 
+if ( ! function_exists( 'dvpls_plugin_enqueue' ) ):
+function dvpls_plugin_enqueue() {
+	// wp_enqueue_script( 'dvpls_builder-bundle', plugin_dir_url( __FILE__ ) .  'scripts/builder-bundle.min.js', array (), 1.1, true);
+	// wp_enqueue_script( 'dvpls_frontend-bundle', plugin_dir_url( __FILE__ ) .  'scripts/frontend-bundle.min.js', array (), 1.1, true);
+	wp_enqueue_script( 'dvpls-swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array() , '8.0.3', true );
+   	wp_enqueue_style( 'dvpls-swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.css', array() , '8.0.3');
 
+}
+
+add_action( 'wp_enqueue_scripts', 'dvpls_plugin_enqueue' );
+endif;
 // /* Display Add to cart button on archives */ 
 
 // add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 10);

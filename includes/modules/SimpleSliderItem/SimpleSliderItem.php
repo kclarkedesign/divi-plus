@@ -51,14 +51,10 @@ class DP_Module_Slider_Item extends ET_Builder_Module {
 		$content = $this->content;
 
 		return sprintf(
-            '<div class="dp_simple_slide">
-				<div class="dp_simple_slide__container et_pb_container clearfix">
-					<div class="dp_simple_slide__container_inner et_pb_slider_container_inner">
-						<div class="dp_simple_slide__description et_pb_slide_description">
-							<h1 class="dp_simple_slide__title et_pb_slide_title">%1$s</h1>
-							<div class="dp_simple_slide__content et_pb_slide_content">%2$s</div>
-						</div>
-					</div>
+            '<div class="dp_simple_slider__slide">
+				<div class="dp_simple_slide__description">
+					<h1 class="dp_simple_slide__title">%1$s</h1>
+					<div class="dp_simple_slide__content">%2$s</div>
 				</div>
 			</div>
 			',
