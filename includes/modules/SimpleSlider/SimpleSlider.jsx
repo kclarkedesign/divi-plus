@@ -12,13 +12,13 @@ class SimpleSlider extends Component {
   render() {
     
     return (
-      <div className="swiper">
-        <div className="swiper-wrapper">
+      <div className="dp_simple_slider__inner">
+        <div className="dp_simple_slider__slides">
           {this.props.content}
         </div>
-        <div className="swiper-pagination"></div>
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
+        <div className="dp_simple_slider__pagination"></div>
+        <div className="dp_simple_slider__prev"></div>
+        <div className="dp_simple_slider__next"></div>
       </div>
     );
   }

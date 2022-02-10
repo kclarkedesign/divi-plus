@@ -52,9 +52,11 @@ class DP_Module_Slider_Item extends ET_Builder_Module {
 
 		return sprintf(
             '<div class="dp_simple_slider__slide">
-				<div class="dp_simple_slide__description">
-					<h1 class="dp_simple_slide__title">%1$s</h1>
-					<div class="dp_simple_slide__content">%2$s</div>
+				<div class="dp_simple_slider__slide-inner">
+					<div class="dp_simple_slider__slide-description">
+						<h1 class="dp_simple_slider__slide-title">%1$s</h1>
+						<div class="dp_simple_slider__slide-content">%2$s</div>
+					</div>
 				</div>
 			</div>
 			',

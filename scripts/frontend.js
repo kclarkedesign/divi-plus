@@ -1,9 +1,9 @@
 // This script is loaded both on the frontend page and in the Visual Builder.
-(function() {
-  const SLIDE_CSS_SELECTOR = ".dp_simple_slide";
+const initSimpleSlider = function() {
+  const SLIDE_CSS_SELECTOR = "dp_simple_slide";
   const PREV_CSS_SELECTOR = ".dp_simple_slider__prev";
   const NEXT_CSS_SELECTOR = ".dp_simple_slider__next";
-  const PAGINATION_CSS_SELECTOR = ".dp_simple_slider__pagination-dot";
+  const PAGINATION_CSS_SELECTOR = "dp_simple_slider__pagination-dot";
 
   const slidePrev = document.querySelectorAll(PREV_CSS_SELECTOR);
   const slideNext = document.querySelectorAll(NEXT_CSS_SELECTOR);
@@ -55,24 +55,11 @@
 
   control(slidePrev, "click", "prev");
   control(slideNext, "click", "next");
-})();
+};
 
 jQuery(function($) {
   $(document).ready(function() {
     console.log("loaded");
-    // const swiper = new Swiper(".swiper", {
-    //   // Optional parameters
-    //   slidesPerView: 1,
-    //   loop: true,
-    //   effect: "fade",
-    //   // If we need pagination
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //   },
-    //   // Navigation arrows
-    //   navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    //   },
+    initSimpleSlider();
   });
 });

@@ -13,11 +13,15 @@ class Slider extends Component {
   render() {
     console.log(this.props);
     return (
-      <div className="swiper-slide dp_simple_slide__description">
-        {/* slide title & content */}
-        <div className='dp_simple_slide__title'>{this.props.heading}</div>
-        <div className='dp_simple_slide__content'>{this.props.content()}</div>
-        {/* button */}
+      <div className="dp_simple_slider__slide">
+        <div className="dp_simple_slider__slide-inner">
+          <div className="swiper-slide dp_simple_slide__slide-description">
+            {/* slide title & content */}
+            <div className='dp_simple_slide__slide-title'>{this.props.heading}</div>
+            <div className='dp_simple_slide__slide-content'>{this.props.content()}</div>
+            {/* button */}
+          </div>
+        </div>
       </div>
     );
   }

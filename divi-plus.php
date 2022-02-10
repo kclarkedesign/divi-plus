@@ -42,7 +42,7 @@ if ( ! function_exists( 'dvpls_plugin_enqueue' ) ):
 function dvpls_plugin_enqueue() {
 	// wp_enqueue_script( 'dvpls_builder-bundle', plugin_dir_url( __FILE__ ) .  'scripts/builder-bundle.min.js', array (), 1.1, true);
 	// wp_enqueue_script( 'dvpls_frontend-bundle', plugin_dir_url( __FILE__ ) .  'scripts/frontend-bundle.min.js', array (), 1.1, true);
-	wp_enqueue_script( 'dvpls-swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array() , '8.0.3', true );
+	// wp_enqueue_script( 'dvpls-swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array() , '8.0.3', true );
    	wp_enqueue_style( 'dvpls-swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.css', array() , '8.0.3');
 
 }
