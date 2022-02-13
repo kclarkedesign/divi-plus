@@ -15,7 +15,7 @@
 
 @media (min-width: 45em) {
   .dp_simple_slider__slide-description {
-    padding: 42px 42px 0;
+    padding: 42px 42px 50px;
   }
 }
 
