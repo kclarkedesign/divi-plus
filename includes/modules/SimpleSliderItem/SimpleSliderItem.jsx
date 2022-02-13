@@ -15,7 +15,7 @@ class Slider extends Component {
     return (
       <div className="dp_simple_slider__slide">
         <div className="dp_simple_slider__slide-inner">
-          <div className="swiper-slide dp_simple_slide__slide-description">
+          <div className="dp_simple_slide__slide-description">
             {/* slide title & content */}
             <div className='dp_simple_slide__slide-title'>{this.props.heading}</div>
             <div className='dp_simple_slide__slide-content'>{this.props.content()}</div>
