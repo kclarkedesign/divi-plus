@@ -16,9 +16,11 @@ class SimpleSlider extends Component {
         <div className="dp_simple_slider__slides">
           {this.props.content}
         </div>
-        <div className="dp_simple_slider__pagination"></div>
-        <div className="dp_simple_slider__prev"></div>
-        <div className="dp_simple_slider__next"></div>
+        <div className="dp_simple_slider__controls">
+          <div className="dp_simple_slider__pagination"></div>
+          <div className="dp_simple_slider__prev"></div>
+          <div className="dp_simple_slider__next"></div>
+        </div>
       </div>
     );
   }

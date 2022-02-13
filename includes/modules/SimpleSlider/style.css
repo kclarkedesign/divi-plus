@@ -14,10 +14,9 @@
   z-index: 1;
 }
 
-/* .dp_simple_slider__inner {
-  max-width: 1080px;
-  margin: 0 auto;
-} */
+.dp_simple_slider__inner {
+  position: relative;
+}
 
 .dp_simple_slider .dp_simple_slider__slide,
 .dp_simple_slider__slides {
@@ -32,6 +31,20 @@
   /* display: flex; */
   transition-property: transform;
   box-sizing: content-box;
+}
+
+/* should match 
+  .dp_simple_slider__slide-inner, 
+  .dp_simple_slider__slide-description 
+  TODO create variables
+*/
+.dp_simple_slider__controls {
+  position: absolute;
+  padding: 0;
+  min-height: 450px;
+  bottom: 40px;
+  left: 40px;
+  width: 475px;
 }
 
 .et-db #et-boc .et-l .et-fb-modules-list .dp_simple_slider:before {

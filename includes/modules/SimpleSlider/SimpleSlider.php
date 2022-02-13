@@ -29,9 +29,11 @@ class DP_Module_Slider extends ET_Builder_Module {
 				<div class="dp_simple_slider__slides">
 					%1$s
 				</div>
-				<div class="dp_simple_slider__pagination"></div>
-				<div class="dp_simple_slider__prev"></div>
-  				<div class="dp_simple_slider__next"></div>
+				<div class="dp_simple_slider__controls">
+					<div class="dp_simple_slider__pagination"></div>
+					<div class="dp_simple_slider__prev"></div>
+					<div class="dp_simple_slider__next"></div>
+				</div>
 			</div>
 			',
 			$content
