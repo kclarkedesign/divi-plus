@@ -38,13 +38,22 @@
   .dp_simple_slider__slide-description 
   TODO create variables
 */
+
 .dp_simple_slider__controls {
   position: absolute;
   padding: 0;
   min-height: 450px;
-  bottom: 40px;
-  left: 40px;
-  width: 475px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 45em) {
+  .dp_simple_slider__controls {
+    bottom: 40px;
+    left: 40px;
+    width: 475px;
+  }
 }
 
 .et-db #et-boc .et-l .et-fb-modules-list .dp_simple_slider:before {

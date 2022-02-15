@@ -11,6 +11,10 @@
   margin-bottom: 0 !important;
 }
 
+.dp_simple_slider__slide-inner {
+  min-height: 45vh;
+}
+
 @media (min-width: 45em) {
   .dp_simple_slider__slide-inner {
     padding: 40px;
@@ -26,6 +30,17 @@
   .dp_simple_slider__slide-description {
     padding: 42px 42px 50px;
     min-height: 450px;
+  }
+}
+@media (max-width: 45em) {
+  .dp_simple_slider__slide-description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 10px;
   }
 }
 
