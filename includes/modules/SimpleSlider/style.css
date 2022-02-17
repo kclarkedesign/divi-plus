@@ -76,7 +76,7 @@
 @media (min-width: 45em) {
   .dp_simple_slider__prev,
   .dp_simple_slider__next {
-    bottom: 30px;
+    bottom: 8vh;
     height: 40px;
     width: 40px;
   }
@@ -97,4 +97,29 @@
     center center no-repeat;
   background-size: 8px 8px;
   right: 25px;
+}
+
+.dp_simple_slide {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
