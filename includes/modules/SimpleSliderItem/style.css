@@ -10,9 +10,10 @@
 .dp_simple_slider__slides .dp_simple_slide {
   margin-bottom: 0 !important;
 }
-
-.dp_simple_slider__slide-inner {
-  min-height: 75vh;
+@media (max-width: 45em) {
+  .dp_simple_slider__slide-inner {
+    min-height: 75vh;
+  }
 }
 
 @media (min-width: 45em) {

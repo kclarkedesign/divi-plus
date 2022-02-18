@@ -50,7 +50,7 @@
 
 @media (min-width: 45em) {
   .dp_simple_slider__controls {
-    bottom: 40px;
+    /* bottom: 40px; */
     left: 40px;
     width: 475px;
   }
@@ -63,7 +63,7 @@
 .dp_simple_slider__prev,
 .dp_simple_slider__next {
   border: 1px solid #fff;
-  bottom: 45px;
+  bottom: 30px;
   display: inline-block;
   height: 30px;
   position: absolute;
@@ -73,29 +73,41 @@
   z-index: 1;
 }
 
+.dp_simple_slider__prev,
+.dp_simple_slider__next {
+  background-size: 8px;
+}
+
 @media (min-width: 45em) {
   .dp_simple_slider__prev,
   .dp_simple_slider__next {
-    bottom: 8vh;
+    bottom: 65px;
     height: 40px;
     width: 40px;
+    background-size: 15px;
   }
 }
 
 .dp_simple_slider__prev {
   content: "";
-  background: url(/wp-content/plugins/divi-plus/includes/assets/slider-arrow-white-left.svg)
-    center center no-repeat;
-  background-size: 8px 8px;
+  background-image: url(/wp-content/plugins/divi-plus/includes/assets/slider-arrow-white-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   margin-right: 10px;
-  right: 50px;
+  right: 65px;
+}
+
+@media (max-width: 45em) {
+  .dp_simple_slider__prev {
+    right: 55px;
+  }
 }
 
 .dp_simple_slider__next {
   content: "";
-  background: url(/wp-content/plugins/divi-plus/includes/assets/slider-arrow-white-right.svg)
-    center center no-repeat;
-  background-size: 8px 8px;
+  background-image: url(/wp-content/plugins/divi-plus/includes/assets/slider-arrow-white-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   right: 25px;
 }
 
